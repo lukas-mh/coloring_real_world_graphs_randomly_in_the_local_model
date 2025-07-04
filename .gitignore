@@ -1,0 +1,4 @@
+build/
+extern/pybind11/build/
+girgs/build/
+datasets/

@@ -1,0 +1,36 @@
+Source: girgs
+Section: misc
+Priority: optional
+Maintainer: Christopher Weyand <christopher.weyand@hpi.de>
+Build-Depends: build-essential, cmake 
+Standards-Version: 3.8.0
+
+Package: libgirgs
+Architecture: any
+Depends: 
+Homepage: https://github.com/chistopher/girgs
+Description: C++ libraries for expected linear-time generation of geometric inhomogeneous and hyperbolic random graphs (girgs, hypergirgs).
+
+Package: libgirgs-dev
+Architecture: any
+Depends: libgirgs
+Homepage: https://github.com/chistopher/girgs
+Description: Header and cmake files for the girgs and hypergirgs C++ libraries.
+
+Package: libgirgs-dbg
+Architecture: any
+Depends: libgirgs, libgirgs-dev
+Homepage: https://github.com/chistopher/girgs
+Description: Debug runtime for the girgs and hypergirgs C++ libraries.
+
+Package: libgirgs-cli
+Architecture: any
+Depends: libgirgs
+Homepage: https://github.com/chistopher/girgs
+Description: Command line clients to generate geometric inhomogeneous random graphs (gengirg) and hyperbolic random graphs (genhrg).
+
+Package: libgirgs-all
+Architecture: any
+Depends: libgirgs, libgirgs-dev, libgirgs-dbg, libgirgs-cli
+Homepage: https://github.com/chistopher/girgs
+Description: Command line client, release and debug runtime, C++ header, and cmake export files for a linear-time sampling algorithm for geometric inhomogeneous random graphs with a special case implementation for hyperbolic random graphs.

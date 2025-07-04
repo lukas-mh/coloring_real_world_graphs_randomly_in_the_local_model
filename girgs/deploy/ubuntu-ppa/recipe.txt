@@ -1,0 +1,3 @@
+# git-build-recipe format 0.4 deb-version {debupstream}+{revno}
+lp:girgs master
+nest-part packaging lp:girgs deploy/ubuntu-ppa/debian debian master
